@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Calculate Area and Perimeter</title>
+    <script>
+        
+       var polygon= prompt("For which polygon you wish to calculate the area and perimeter?(Square/Rectangle)");
+       if(polygon=="Square"){
+        var length = prompt("Enter length");
+        length = parseFloat(length);
+       
+        
+        var area = length*length;
+        var perimeter= 4*length;
+        area = parseInt(area);
+
+        perimeter =parseInt(perimeter);
+        alert("Area of Square = " + area);
+        alert("Perimeter of Square =" + perimeter);
+    }
+    else if(polygon=="Rectangle"){
+    	var length = prompt("Enter length");
+        length = parseFloat(length);
+       
+        var width = prompt("Enter width");
+        width = parseFloat(width);
+       var area= length*width;
+       area=parseInt(area);
+
+       var perimeter=2*(length+width);
+
+       perimeter=parseInt(perimeter);
+       alert("Area of Rectangle" +area);
+       alert("Perimeter of Rectangle" + perimeter);
+     
+
+    }
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Thanks for using the Area and Perimeter Calculator</h1>
+    </main>
+</body>
+</html>
